@@ -76,7 +76,7 @@ namespace Immersion
             return block.SideSolid[side.GetOpposite().Index]; //test if neighbor face is solid
         }
 
-        public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos Pos, IPlayer byPlayer, float dropChanceMultiplier, ref EnumHandling handling)
+        public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos Pos, IPlayer byPlayer, ref float dropChanceMultiplier, ref EnumHandling handling)
         {
             handling = EnumHandling.PreventDefault;
             Block block = world.BlockAccessor.GetBlock(this.block.CodeWithParts("e"));

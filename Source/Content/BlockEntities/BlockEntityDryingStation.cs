@@ -155,10 +155,10 @@ namespace Immersion
             timeWhenDone = Api.World.Calendar.TotalHours + dryingTime;
         }
 
-        public override void FromTreeAtributes(ITreeAttribute tree, IWorldAccessor worldForResolving)
+        public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldForResolving)
         {
             timeWhenDone = tree.GetDouble("timewhendone", 0);
-            base.FromTreeAtributes(tree, worldForResolving);
+            base.FromTreeAttributes(tree, worldForResolving);
         }
 
         public override void ToTreeAttributes(ITreeAttribute tree)

@@ -84,10 +84,10 @@ namespace Immersion
             base.ToTreeAttributes(tree);
         }
 
-        public override void FromTreeAtributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
+        public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
         {
             index = (uint)tree.TryGetInt("roadindex");
-            base.FromTreeAtributes(tree, worldAccessForResolve);
+            base.FromTreeAttributes(tree, worldAccessForResolve);
         }
     }
 }

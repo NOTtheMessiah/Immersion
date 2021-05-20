@@ -51,9 +51,9 @@ namespace Immersion
             }
         }
 
-        public override void OnNeighourBlockChange(IWorldAccessor world, BlockPos pos, BlockPos neibpos)
+        public override void OnNeighbourBlockChange(IWorldAccessor world, BlockPos pos, BlockPos neibpos)
         {
-            base.OnNeighourBlockChange(world, pos, neibpos);
+            base.OnNeighbourBlockChange(world, pos, neibpos);
             if (this.FirstCodePart() == "palmlog") return;
 
             foreach (var offset in AreaMethods.Cardinals)

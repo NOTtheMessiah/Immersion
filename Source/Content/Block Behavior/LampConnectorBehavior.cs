@@ -105,7 +105,7 @@ namespace Immersion
             return new ItemStack(world.BlockAccessor.GetBlock(block.CodeWithParts("north", "short")));
         }
 
-        public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos Pos, IPlayer byPlayer, float dropChanceMultiplier, ref EnumHandling handling)
+        public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos Pos, IPlayer byPlayer, ref float dropChanceMultiplier, ref EnumHandling handling)
         {
             handling = EnumHandling.PreventDefault;
             if (flipable)

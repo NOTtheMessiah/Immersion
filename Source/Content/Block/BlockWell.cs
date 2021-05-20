@@ -140,9 +140,9 @@ namespace Immersion
             MarkDirty();
         }
 
-        public override void FromTreeAtributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
+        public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
         {
-            base.FromTreeAtributes(tree, worldAccessForResolve);
+            base.FromTreeAttributes(tree, worldAccessForResolve);
             Depth = tree.GetInt("depth", 1);
             MiningProgress = tree.GetFloat("miningprogress");
         }

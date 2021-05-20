@@ -97,9 +97,9 @@ namespace Immersion
 
         public void UpdateGrowTime() => nextGrowTime = Api.World.Calendar.TotalHours + 48;
 
-        public override void FromTreeAtributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
+        public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
         {
-            base.FromTreeAtributes(tree, worldAccessForResolve);
+            base.FromTreeAttributes(tree, worldAccessForResolve);
             byte[] ftBytes = tree.GetBytes("myFruits");
             byte[] fdBytes = tree.GetBytes("myFronds");
 
